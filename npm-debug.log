@@ -1,0 +1,184 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData eslint
+20 silly mapToRegistry name eslint
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'eslint',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'eslint',
+23 silly mapToRegistry   name: 'eslint',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/eslint
+25 silly fetchNamedPackageData eslint-config-google
+26 silly mapToRegistry name eslint-config-google
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'eslint-config-google',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'eslint-config-google',
+29 silly mapToRegistry   name: 'eslint-config-google',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/eslint-config-google
+31 silly fetchNamedPackageData eslint-plugin-html
+32 silly mapToRegistry name eslint-plugin-html
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'eslint-plugin-html',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'eslint-plugin-html',
+35 silly mapToRegistry   name: 'eslint-plugin-html',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/eslint-plugin-html
+37 verbose request uri https://registry.npmjs.org/eslint
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 2:24:34 PM
+40 verbose request id d1bf77663b7b07fc
+41 http request GET https://registry.npmjs.org/eslint
+42 verbose request uri https://registry.npmjs.org/eslint-config-google
+43 verbose request no auth needed
+44 info attempt registry request try #1 at 2:24:34 PM
+45 http request GET https://registry.npmjs.org/eslint-config-google
+46 verbose request uri https://registry.npmjs.org/eslint-plugin-html
+47 verbose request no auth needed
+48 info attempt registry request try #1 at 2:24:34 PM
+49 http request GET https://registry.npmjs.org/eslint-plugin-html
+50 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+51 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+52 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+53 info attempt registry request try #2 at 2:24:44 PM
+54 http request GET https://registry.npmjs.org/eslint
+55 info attempt registry request try #2 at 2:24:44 PM
+56 http request GET https://registry.npmjs.org/eslint-config-google
+57 info attempt registry request try #2 at 2:24:44 PM
+58 http request GET https://registry.npmjs.org/eslint-plugin-html
+59 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+60 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+61 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+62 info attempt registry request try #3 at 2:25:44 PM
+63 http request GET https://registry.npmjs.org/eslint
+64 info attempt registry request try #3 at 2:25:44 PM
+65 http request GET https://registry.npmjs.org/eslint-config-google
+66 info attempt registry request try #3 at 2:25:44 PM
+67 http request GET https://registry.npmjs.org/eslint-plugin-html
+68 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+68 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+68 silly fetchPackageMetaData     at ClientRequest.g (events.js:291:16)
+68 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+68 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+68 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+68 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+68 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+68 silly fetchPackageMetaData     at connectErrorNT (net.js:1022:8)
+68 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+68 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:98:9)
+68 silly fetchPackageMetaData  error for eslint@^3.12.0 { Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+68 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+68 silly fetchPackageMetaData     at ClientRequest.g (events.js:291:16)
+68 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+68 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+68 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+68 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+68 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+68 silly fetchPackageMetaData     at connectErrorNT (net.js:1022:8)
+68 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+68 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:98:9) code: 'ECONNRESET' }
+69 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+69 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+69 silly fetchPackageMetaData     at ClientRequest.g (events.js:291:16)
+69 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+69 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+69 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+69 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+69 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+69 silly fetchPackageMetaData     at connectErrorNT (net.js:1022:8)
+69 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+69 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:98:9)
+69 silly fetchPackageMetaData  error for eslint-config-google@^0.7.1 { Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+69 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+69 silly fetchPackageMetaData     at ClientRequest.g (events.js:291:16)
+69 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+69 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+69 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+69 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+69 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+69 silly fetchPackageMetaData     at connectErrorNT (net.js:1022:8)
+69 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+69 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:98:9) code: 'ECONNRESET' }
+70 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+70 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+70 silly fetchPackageMetaData     at ClientRequest.g (events.js:291:16)
+70 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+70 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+70 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+70 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+70 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+70 silly fetchPackageMetaData     at connectErrorNT (net.js:1022:8)
+70 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+70 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:98:9)
+70 silly fetchPackageMetaData  error for eslint-plugin-html@^1.7.0 { Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+70 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+70 silly fetchPackageMetaData     at ClientRequest.g (events.js:291:16)
+70 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+70 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+70 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:310:9)
+70 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+70 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+70 silly fetchPackageMetaData     at connectErrorNT (net.js:1022:8)
+70 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+70 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:98:9) code: 'ECONNRESET' }
+71 silly rollbackFailedOptional Starting
+72 silly rollbackFailedOptional Finishing
+73 silly runTopLevelLifecycles Finishing
+74 silly install printInstalled
+75 verbose stack Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+75 verbose stack     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+75 verbose stack     at ClientRequest.g (events.js:291:16)
+75 verbose stack     at emitOne (events.js:96:13)
+75 verbose stack     at ClientRequest.emit (events.js:188:7)
+75 verbose stack     at Socket.socketErrorListener (_http_client.js:310:9)
+75 verbose stack     at emitOne (events.js:96:13)
+75 verbose stack     at Socket.emit (events.js:188:7)
+75 verbose stack     at connectErrorNT (net.js:1022:8)
+75 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+75 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+76 verbose cwd /Users/philkappe/Documents/Dev/WOS/WOS-Portal
+77 error Darwin 16.4.0
+78 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+79 error node v6.9.4
+80 error npm  v3.10.10
+81 error code ECONNRESET
+82 error network tunneling socket could not be established, cause=getaddrinfo ENOTFOUND sjc1intproxy01.crd.ge.com sjc1intproxy01.crd.ge.com:8080
+83 error network This is most likely not a problem with npm itself
+83 error network and is related to network connectivity.
+83 error network In most cases you are behind a proxy or have bad network settings.
+83 error network
+83 error network If you are behind a proxy, please make sure that the
+83 error network 'proxy' config is set properly.  See: 'npm help config'
+84 verbose exit [ 1, true ]
