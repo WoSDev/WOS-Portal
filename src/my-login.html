@@ -1,0 +1,86 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="my-redirect.html">
+
+<dom-module id="my-login">
+  <template>
+    <style>
+      .login {
+        background: white;
+        margin: auto;
+        height: 600px;
+        width: 400px;
+        margin-top: 5vh;
+      }
+
+      .wosHeader {
+        margin: auto;
+        text-align: center;
+      }
+
+      paper-input {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+      }
+
+      paper-button {
+        margin-top: 75px;
+        padding: 20px;
+      }
+    </style>
+
+    <div class="login">
+      <div class="wosHeader">
+        <img src="../images/WOS-Logo.png" />
+        
+        <paper-input label="Email Address" type="email" value="{{email}}"></paper-input>
+        <paper-input label="Password" type="password" value="{{password}}"></paper-input>
+        <paper-button on-click="_login">Login</paper-button>
+        <paper-button>New User</paper-button>
+      </div>
+    </div>
+
+  </template>
+  <script>
+    Polymer({
+      is: 'my-login',
+
+      properties: {
+        email: String,
+        password: String
+      },
+
+      ready: function () {
+        
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBK9RashRh-a2X3-aaHvUNpgzfU4hxNkF8",
+          authDomain: "wos-portal.firebaseapp.com",
+          databaseURL: "https://wos-portal.firebaseio.com",
+          projectId: "wos-portal",
+          storageBucket: "wos-portal.appspot.com",
+          messagingSenderId: "238977306100"
+        };
+        firebase.initializeApp(config);
+      },
+
+      _login: function () {
+        console.log(this.email)
+        console.log(this.password)
+        firebase.auth().signInWithEmailAndPassword(this.email, this.password)
+        .catch(function (error) {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+
+          alert("Unable to log in!")
+        })
+        .then(function(message) {
+          window.location = "./my-redirect.html";
+        })
+      }
+
+    })
+  </script>
+</dom-module>

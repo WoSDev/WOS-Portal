@@ -1,0 +1,98 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-documents">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+      .docCard{
+        height: 300px;
+        width: 200px;
+        display: inline-block;
+        background-size: contain;
+        margin: 20px;
+        cursor: pointer;
+        vertical-align: top;
+        background-color: red;
+      }
+    </style>
+
+    <template is="dom-repeat" items="[[docs]]">
+      
+      <div class="docCard" style="background: url([[item.thumbnail]])"><h2>[[item.name]]</h2></div>
+    </template>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-documents',
+
+      properties: {
+        docs: {
+          type: Array,
+          value: [
+            {
+              name: 'I-9',
+              thumbnail: '../images/doc-thumbnails/i9.png',
+              document: '../docs/wos-hr/i9.pdf'
+            },
+            {
+              name: 'W-4',
+              thumbnail: '../images/doc-thumbnails/w4.png',
+              document: '../docs/wos-hr/w4.pdf'
+            },
+            {
+              name: 'Employment Application',
+              thumbnail: '../images/doc-thumbnails/Application.png',
+              document: '../docs/wos-hr/EmployeeHandbookReceipt.pdf'
+            },
+            {
+              name: 'Direct Deposit',
+              thumbnail: '../images/doc-thumbnails/DirectDeposit.png',
+              document: '../docs/wos-hr/DirectDeposit.pdf'
+            },
+            {
+              name: 'Handbook Receipt',
+              thumbnail: '../images/doc-thumbnails/EmployeeHandbookReceipt.png',
+              document: '../docs/wos-hr/EmployeeHandbookReceipt.pdf'
+            },
+            {
+              name: 'Journal Consent',
+              thumbnail: '../images/doc-thumbnails/JournalConsent.png',
+              document: '../docs/wos-hr/JournalConsent.pdf'
+            },
+            {
+              name: 'Technology Acceptable Use Policy',
+              thumbnail: '../images/doc-thumbnails/TechnologyAcceptableUsePolicy.png',
+              document: '../docs/wos-hr/TechnologyAcceptableUsePolicyForm.docx'
+            },
+            {
+              name: 'Transit Check',
+              thumbnail: '../images/doc-thumbnails/TransitCheck.png',
+              document: '../docs/wos-hr/TransitCheck.pdf'
+            },
+            {
+              name: 'Background Check Authorization',
+              thumbnail: '../images/doc-thumbnails/BackgroundCheck.png',
+              document: '../docs/wos-hr/WOSBGCheckAuth.pdf'
+            },
+          ]
+        }
+      }
+    });
+  </script>
+</dom-module>
